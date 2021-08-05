@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//Components
+import StoreNotes from './components/storeNotes';
+import GetNotes from './components/getNotes';
+
+//CSS
+import './components/storeNotes/styles.css';
+import './components/getNotes/styles.css';
+import './styles/global.css';
+
+//Context
+import AddStoreProvider from './contexts/addNote';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AddStoreProvider>
+      <div className="main-container">
+        <StoreNotes />
+        <GetNotes />
+      </div>
+    </AddStoreProvider>
   );
 }
 

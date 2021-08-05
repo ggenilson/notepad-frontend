@@ -1,0 +1,36 @@
+.container-store-notes {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.container-store-notes h2 {
+  color: rgb(129, 39, 140);
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-input input,
+.container-input textarea {
+  margin-bottom: 20px;
+  background-color: rgb(243, 244, 246);
+  border: none;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.container-store-notes button {
+  align-self: flex-end;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(254, 117, 2);
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+}
