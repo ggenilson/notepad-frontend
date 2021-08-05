@@ -10,6 +10,9 @@ import './styles/global.css';
 //Context
 import AddStoreProvider from './contexts/addNote';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
     <AddStoreProvider>
@@ -17,6 +20,7 @@ function App() {
         <StoreNotes />
         <GetNotes />
       </div>
+      <ToastContainer />
     </AddStoreProvider>
   );
 }

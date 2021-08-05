@@ -22,7 +22,7 @@ const GetNotes: FC = () => {
     const res = await Api.delete(`/notes/${id}`);
 
     if (res?.data) {
-      toast.success('Item eliminado com sucesso');
+      toast.success('Nota eliminada com sucesso!');
       setStatus(true);
 
       return;
